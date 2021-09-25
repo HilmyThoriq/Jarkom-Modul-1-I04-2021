@@ -6,6 +6,21 @@ Nadhif Bhagawanta Hadiprayitno 05111942000029 <br />
 # Problem 1
 **What web server is used on "ichimarumaru.tech"!**
 
+To answer the question is by inserting http.host == ichimarumaru.tech into the filter of captured packets after opening the 1-5 file. After that it will display the two below and by right-clicking the first one and clicking follow → http, it will display it.
+
+![image](https://user-images.githubusercontent.com/81474281/134762821-1bf74468-8ba4-4d5c-83ef-6915dd2546be.png)
+
+The filter results
+
+![image](https://user-images.githubusercontent.com/81474281/134762841-2313df0a-dcca-475f-aab0-fa44fdbe7e00.png)
+
+the result after follow http
+
+the answer in the end would be Nginx Web Server
+
+**Difficulties:**
+- No difficulties
+
 # Problem 2
 **Find the packets from the web that use the basic authentication method!**
 
@@ -170,3 +185,17 @@ First we need to know the kemenag.go.id ip using `command prompt` then we use th
 
 # Problem 15
 **Filter so that wireshark only picks up packets coming from your local ip address!**
+
+For the answer, first of all you need to open Command Prompt and enter “ipconfig” and it will reveal the IPv4 Address →192.168.100.8 
+After that inside the filter input the command ip.addr == 192.168.100.8 after the capture packet command has run a bit.
+
+![image](https://user-images.githubusercontent.com/81474281/134762955-23f1c297-f70d-459e-a40f-ae8e5c9e6c3c.png)
+
+Result from opening ipconfig
+
+![image](https://user-images.githubusercontent.com/81474281/134762977-9edc6618-d739-4ffa-ad73-16e49ccb240d.png)
+
+result after inputting ip.addr == 192.168.100.8 in the filter
+
+**Difficulties**
+- no Difficulties
