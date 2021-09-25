@@ -129,12 +129,30 @@ from here we know the password of the zip using `d1b1langbukanapaapajugagapercay
 
 # Problem 11
 **Filter so that wireshark only picks up packets coming from port 80!**
+![11](https://user-images.githubusercontent.com/74058892/134762013-5acafd9b-1b55-439a-a28a-357ff008a96a.jpeg)
+
+In this problem we have to picks up packet that only coming from port 80. So, we use filter tcp.srcport == 80 and that is the result. As you can see that the source port is 80.
+
+**Difficulties**
+- No difficulties
 
 # Problem 12
 **Filter so that wireshark only picks up packets containing port 21!**
+![12](https://user-images.githubusercontent.com/74058892/134762020-ae2929ed-87fc-4472-a8b6-0c616dfb1715.jpeg)
+
+In this problem, we need to find packets that containing port 21. SO, we use filter tcp.port == 21 || udp.port == 21 and you can see the result above. there is no packet that contains port 21
+
+**Difficulties**
+- We are not really sure because we already try together and there is still no result for problem 12
 
 # Problem 13
 **Filter so that wireshark only shows packets going to port 443!**
+![13](https://user-images.githubusercontent.com/74058892/134762025-4632b8e5-03ce-4ff0-8a9d-ac3ade3bfc4e.jpeg)
+
+In this problem we have to shows packets that going to port 443. So, we use filter tcp.dstport == 443 and then we get the result like the picture above. As you can see from the picture, the destination port is 443.
+
+**Difficulties**
+- No difficulties
 
 # Problem 14
 **Filter so that wireshark only picks up packets going to kemenag.go.id!**
